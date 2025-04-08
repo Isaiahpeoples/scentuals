@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,700;1,9..40,400;1,9..40,700&family=DM+Serif+Text:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Scentuals</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link href="./src/output.css" rel="stylesheet" />
+     <script src="./script.js"></script>
+    <script src="./snipcart.js"></script>
+
+   </head>
+  <body>
+    <nav class="py-2 px-4 bg-black text-white sticky top-0 z-10 flex">
+      <div>
+        <h1 class="text-2xl"><span class="italic">Scentuals</span></h1>
+        <p class="text-slate-400">Discover the perfect scent</p>
+      </div>
+      <div class="ml-auto my-auto">
+        <button class="snipcart-checkout flex items-center relative">
+          <span class="snipcart-total-price text-sm">$0.00</span>
+          <i class="fa-solid fa-cart-shopping text-3xl p-2"></i>
+          <span
+            class="snipcart-items-count absolute top-0 right-0 bg-blue-500 block w-5 h-5 text-xs rounded-full leading-5"
+            >0</span
+          >
+        </button>
+      </div>
+      <div class="pl-4 my-auto">
+        <button class="snipcart-customer-signin pl-4 border-l border-l-white">
+          <i class="fa-solid fa-user text-3xl"></i>
+        </button>
+      </div>
+    </nav>
+    <main>
+      <header
+        class="flex bg-[url('../assets/bg.jpg')] bg-cover h-[calc(100vh-72px)] min-h-[400px]"
+      >
+        <div class="m-auto text-center">
+          <h1 class="text-3xl mb-8"><span class="italic">Scentuals</span></h1>
+          <h1
+            class="mb-8 drop-shadow-lg text-7xl underline text-black decoration-black underline-offset-8"
+          >
+            Find YOUR scent
+          </h1>
+          <p class="text-lg mb-8 drop-shadow-lg">Fragrances for men & women</p>
+          <button
+            id="btn-browse-collection"
+            class="bg-black text-white uppercase px-6 py-4 cursor-pointer font-bold rounded-md hover:bg-zinc-700 transition-colors"
+          >
+            Browse the collection
+          </button>
+        </div>
+      </header>
+      <!-- PRODUCT 1 -->
+      <section
+        id="product-1"
+        class="product md:flex max-w-screen-xl mx-auto p-20 items-center gap-6"
+      >
+        <div class="border rounded-md md:min-w-[30%] md:max-w-[30%]">
+          <img src="./assets/1.jpg" alt="Equinox" />
+        </div>
+        <div class="flex-grow">
+          <h1 class="text-7xl">Equinox</h1>
+          <p class="mt-8">
+            Introducing Equinox, a captivating unisex fragrance that effortlessly blends sweetness with sophistication. This scent offers a harmonious balance of floral, fruity, and warm notes. Top notes of juicy pear and zesty bergamot create a fresh, inviting opening. The heart blooms with delicate jasmine and soft lavender, adding a touch of elegance. Finally, base notes of creamy sandalwood and sweet vanilla provide warmth and depth. Equinox is a versatile, enchanting fragrance that envelops the wearer in a sweet, yet refined aroma, offering a perfect balance of freshness, elegance, and warmth for any occasion.
+          </p>
+          <p class="text-2xl mt-8">$79.99</p>
+          <label class="text-sm mt-8 inline-block">Quantity</label>
+          <div class="grid grid-cols-[100px_1fr] gap-8">
+            <input
+              class="quantity border border-black rounded-md text-center px-2"
+              type="number"
+              value="1"
+              min="1"
+            />
+            <button
+              data-item-id="Equinox"
+              data-item-price="79.99"
+              data-item-description="Equinox blends pear, bergamot, jasmine, lavender, sandalwood, and vanilla for a sweet, elegant fragrance that’s fresh and refined."
+              data-item-image="./assets/1.jpg"
+              data-item-name="Equinox"
+              data-item-url="/"
+              class="snipcart-add-item bg-black text-white uppercase px-6 py-4 cursor-pointer font-bold rounded-md hover:bg-zinc-700 transition-colors"
+            >
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- PRODUCT 2 -->
+      <section
+        class="product md:flex flex-row-reverse max-w-screen-xl mx-auto p-20 items-center gap-6"
+      >
+        <div class="border rounded-md md:min-w-[30%] md:max-w-[30%]">
+          <img src="./assets/2.jpg" alt="Serenity Blossom" />
+        </div>
+        <div class="flex-grow">
+          <h1 class="text-7xl">Serenity Blossom</h1>
+          <p class="mt-8">
+            Introducing Serenity Blossom, a captivating women’s perfume that evokes elegance and grace. This fragrance opens with fresh top notes of vibrant citrus and ripe peach, creating a bright, uplifting aura. The heart reveals a bouquet of delicate jasmine, romantic rose, and soft peony, enveloping you in a floral symphony. Base notes of creamy sandalwood, warm amber, and sweet vanilla add depth and warmth, leaving a lasting, irresistible impression. Serenity Blossom is a refined, timeless fragrance that beautifully balances freshness with floral richness, perfect for any occasion where elegance is key.
+          </p>
+          <p class="text-2xl mt-8">$49.99</p>
+          <label class="text-sm mt-8 inline-block">Quantity</label>
+          <div class="grid grid-cols-[100px_1fr] gap-8">
+            <input
+              class="quantity border border-black rounded-md text-center px-2"
+              type="number"
+              value="1"
+              min="1"
+            />
+            <button
+              data-item-id="serenity-blossom"
+              data-item-price="49.99"
+              data-item-description="Serenity Blossom blends citrus, peach, jasmine, rose, peony, sandalwood, amber, and vanilla for a fresh, elegant, floral fragrance."
+              data-item-image="./assets/2.jpg"
+              data-item-name="Serenity Blossom"
+              data-item-url="/"
+              class="snipcart-add-item bg-black text-white uppercase px-6 py-4 cursor-pointer font-bold rounded-md hover:bg-zinc-700 transition-colors"
+            >
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- PRODUCT 3 -->
+      <section
+        class="product md:flex max-w-screen-xl mx-auto p-20 items-center gap-6"
+      >
+        <div class="border rounded-md md:min-w-[30%] md:max-w-[30%]">
+          <img src="./assets/3.jpg" alt="Cobalt Edge" />
+        </div>
+        <div class="flex-grow">
+          <h1 class="text-7xl">Cobalt Edge</h1>
+          <p class="mt-8">
+            Cobalt Edge is a refined men’s cologne that exudes strength and sophistication. It opens with fresh, energizing top notes of bergamot and green apple, offering a crisp, lively start. The heart unfolds with a rich blend of spicy black pepper, aromatic lavender, and earthy vetiver, creating depth and complexity. Base notes of warm amber, smooth sandalwood, and musky tonka bean provide a powerful, lasting foundation. Cobalt Edge balances invigorating freshness with warm, spicy, and woody accords, making it the perfect fragrance for the modern man who desires a bold, unforgettable scent.
+          </p>
+          <p class="text-2xl mt-8">$39.99</p>
+          <label class="text-sm mt-8 inline-block">Quantity</label>
+          <div class="grid grid-cols-[100px_1fr] gap-8">
+            <input
+              class="quantity border border-black rounded-md text-center px-2"
+              type="number"
+              value="1"
+              min="1"
+            />
+            <button
+              data-item-id="cobalt-edge"
+              data-item-price="39.99"
+              data-item-description="Cobalt Edge combines bergamot, apple, black pepper, lavender, vetiver, amber, sandalwood, and tonka bean for a bold, sophisticated scent."
+              data-item-image="./assets/3.jpg"
+              data-item-name="Cobalt Edge"
+              data-item-url="/"
+              class="snipcart-add-item bg-black text-white uppercase px-6 py-4 cursor-pointer font-bold rounded-md hover:bg-zinc-700 transition-colors"
+            >
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="text-white text-3xl p-20 bg-gradient-to-r from-slate-800 to-zinc-800"
+    >
+      <div class="flex justify-center gap-8">
+        <a href="https://facebook.com">
+          <i
+            class="fa-brands fa-facebook hover:text-blue-500 transition-colors"
+          ></i>
+        </a>
+        <a href="https://youtube.com">
+          <i
+            class="fa-brands fa-youtube hover:text-red-500 transition-colors"
+          ></i>
+        </a>
+        <a href="https://instagram.com">
+          <i
+            class="fa-brands fa-instagram hover:text-pink-500 transition-colors"
+          ></i>
+        </a>
+      </div>
+      <p class="flex justify-center py-4 text-lg">
+        Copyright &copy; Scentuals 2025. All Rights Reserved
+      </p>
+    </footer>
+  </body>
+</html>
