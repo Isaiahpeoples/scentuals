@@ -12,7 +12,7 @@
 
 <div align="center">
  
-[![Version](https://img.shields.io/badge/version-1.0.0-white.svg)](https://github.com/your-username/scentuals)
+[![Version](https://img.shields.io/badge/version-4.0.0-white.svg)](https://github.com/your-username/scentuals)
 [![Tailwind CSS](https://img.shields.io/badge/Built_With-Tailwind_CSS-white)](https://tailwindcss.com/)
 [![Snipcart](https://img.shields.io/badge/Built_With-Snipcart-white)](https://snipcart.com/)
 [![Bing AI Image Gen](https://img.shields.io/badge/Built_With-Bing_AI_Image_Generator-white)](https://www.bing.com/images/create)
